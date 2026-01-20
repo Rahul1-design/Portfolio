@@ -1,16 +1,51 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website showcasing my journey as an aspiring full-stack developer.
 
-Currently, two official plugins are available:
+## 🌟 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio highlights the projects I've built while learning web development. I'm a beginner developer from Kathmandu, Nepal, passionate about creating web applications and continuously improving my skills.
 
-## React Compiler
+## 🚀 Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI library
+- **Vite** - Build tool
+- **Tailwind CSS v4** - Styling
+- **Lucide React** - Icons
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design for all devices
+- Smooth scrolling navigation
+- Project showcase with technology tags
+- Contact information and social links
+- Modern gradient UI with glassmorphism effects
+
+## 🛠️ Projects Showcased
+
+- Inventory Management System (Next.js, Express, PostgreSQL)
+- Anonymous Messaging App (Next.js, TypeScript, MongoDB)
+- ImageKit Video Shop (Next.js, Razorpay)
+- SaaS Landing Page (React, Tailwind CSS)
+- Weather App, Todo App, and more!
+
+## 📦 Installation
+```bash
+npm install
+npm run dev
+```
+
+## 📫 Contact
+
+- Email: rahulshrestha3132@gmail.com
+- LinkedIn: [linkedin.com/in/rahul-shrestha-3905a2395](https://www.linkedin.com/in/rahul-shrestha-3905a2395)
+- GitHub: [@Rahul1-design](https://github.com/Rahul1-design)
+
+---
+
+⭐ Feel free to star this repo if you find it helpful!
+```
+
+**Topics/Tags to add on GitHub:**
+```
+portfolio react vite tailwindcss frontend web-development personal-website responsive-design
