@@ -136,11 +136,7 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 relative inline-block">
             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-purple-400 shadow-2xl shadow-purple-500/50 mx-auto">
-              <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Crect fill='%236366f1' width='160' height='160'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='64' fill='white'%3ERS%3C/text%3E%3C/svg%3E"
-                alt="Rahul Shrestha"
-                className="w-full h-full object-cover"
-              />
+              <img src="/me.jpg" alt="Rahul Shrestha" className="w-full  h-full object-cover" />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-slate-900"></div>
           </div>
