@@ -20,7 +20,6 @@ const Portfolio = () => {
       description: "Learning project built by following a tutorial. Features authentication, dashboard analytics, and product management. Still learning many of the concepts used.",
       tech: ["Next.js", "Express.js", "Prisma", "PostgreSQL", "Redux Toolkit"],
       github: "https://github.com/Rahul1-design",
-      
       featured: true
     },
     {
