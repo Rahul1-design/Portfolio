@@ -19,60 +19,72 @@ const Portfolio = () => {
       title: "Inventory Management System",
       description: "Learning project built by following a tutorial. Features authentication, dashboard analytics, and product management. Still learning many of the concepts used.",
       tech: ["Next.js", "Express.js", "Prisma", "PostgreSQL", "Redux Toolkit"],
-      github: "https://github.com/Rahul1-design",
+      github: "https://github.com/Rahul1-design/Inventory-tracking-and-reporting-system",
       featured: true
     },
     {
       title: "Anonymous Messaging App",
       description: "Full-stack platform enabling users to create accounts and receive anonymous messages. Secure authentication and real-time messaging capabilities.",
       tech: ["Next.js", "TypeScript", "MongoDB", "Mongoose", "NextAuth"],
-      github: "https://github.com/Rahul1-design",
+      github: "https://github.com/Rahul1-design/Anonymous-App",
       featured: true
     },
     {
       title: "ImageKit Video Shop",
       description: "Modern video content management and sales platform with user authentication, video uploads, and payment processing integration.",
       tech: ["Next.js", "ImageKit", "Razorpay", "Authentication"],
-      github: "https://github.com/Rahul1-design",
+      github: "https://github.com/Rahul1-design/ImageKit-Video-Shop-",
       featured: true
     },
     {
       title: "SaaS Landing Page",
       description: "Modern, responsive SaaS landing page built with mobile-first principles. Clean design with smooth animations and optimal user experience.",
       tech: ["React.js", "Tailwind CSS", "Responsive Design"],
-      github: "https://github.com/Rahul1-design",
+      github: "https://github.com/Rahul1-design/SaaS-App-Landing-Page",
       featured: true
     },
     {
       title: "Weather App",
       description: "Responsive weather application fetching real-time data from OpenWeatherMap API. Displays temperature, conditions, humidity, and wind speed with elegant UI.",
       tech: ["React", "Vite", "Tailwind CSS", "OpenWeatherMap API"],
-      github: "https://github.com/Rahul1-design"
+      github: "https://github.com/Rahul1-design/Weather-App"
     },
     {
       title: "Todo List Application",
       description: "Clean todo app with add, edit, delete, and completion features. Implements localStorage for data persistence and task filtering.",
       tech: ["React", "Vite", "Tailwind CSS", "localStorage"],
-      github: "https://github.com/Rahul1-design"
+      github: "https://github.com/Rahul1-design/Todo-App-LIst"
     },
     {
       title: "Spotify Clone",
       description: "Web player clone with dynamic song loading, play/pause controls, track navigation, real-time seek bar, and responsive playlist UI.",
       tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Rahul1-design"
+      github: "https://github.com/Rahul1-design/Spotify-Clone"
     },
     {
       title: "Twitter UI Clone",
       description: "Clean interface clone focusing on design and layout. Practice project for Tailwind utility classes and responsive modern UI styling.",
       tech: ["HTML", "Tailwind CSS"],
-      github: "https://github.com/Rahul1-design"
+      github: "https://github.com/Rahul1-design/Twitter-Clone-"
+    },
+    {
+      title: "Netflix Clone",
+      description: "A simple Netflix landing page clone built using HTML and CSS. The project focuses on layout, responsive design, and recreating the look of Netflix’s homepage..",
+      tech: ["HTML", "CSS"],
+      github: "https://github.com/Rahul1-design/Netflix-Clone"
+    }, 
+    {
+      title: "Calculator App",
+      description: "A responsive calculator web app built with React, Vite, and Tailwind CSS. Supports basic arithmetic operations with chain calculations.",
+      tech: ["React", "Vite", "Tailwind CSS"],
+      github: "https://github.com/Rahul1-design/Calculator-App"
     }
   ];
 
   const skills = {
     "Frontend": ["HTML/CSS", "JavaScript", "React.js", "Tailwind CSS", "Responsive Design"],
-    "Learning": ["Next.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "PostgreSQL"],
-    "Familiar With": ["Git/GitHub", "Vite", "Prisma", "Redux Toolkit", "NextAuth", "REST APIs"]
+    "Learning": ["Next.js", "TypeScript (Basic)", "Node.js", "Express.js (Basic)", "MongoDB (Connection and Basic queries)", "PostgreSQL"],
+    "Familiar With": ["Git/GitHub","Prisma", "Redux Toolkit", "NextAuth", "REST APIs"]
   };
 
   const scrollToSection = (sectionId) => {
