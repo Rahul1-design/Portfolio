@@ -97,12 +97,12 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               RS
             </div>
             
@@ -147,12 +147,12 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 relative inline-block">
             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-purple-400 shadow-2xl shadow-purple-500/50 mx-auto">
-              <img src="/me.jpg" alt="Rahul Shrestha" className="w-full  h-full object-cover" />
+              <img src="/me.png" alt="Rahul Shrestha" className="w-full  h-full object-cover" />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-slate-900"></div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-linear-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
             Rahul Shrestha
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
@@ -165,7 +165,7 @@ const Portfolio = () => {
           <div className="flex justify-center gap-4 mb-8">
             <button 
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all transform hover:scale-105"
+              className="px-8 py-3 bg-linear-to-r from-purple-500 to-pink-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all transform hover:scale-105"
             >
               View My Work
             </button>
@@ -197,7 +197,7 @@ const Portfolio = () => {
       {/* About Section */}
       <section id="about" className="min-h-screen flex items-center justify-center px-4 py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             About Me
           </h2>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-purple-500/20">
@@ -217,7 +217,7 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section id="projects" className="min-h-screen px-4 py-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             My Projects
           </h2>
           <p className="text-center text-gray-400 mb-12">Projects I've built while learning web development (many from tutorials)</p>
@@ -265,7 +265,7 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section id="skills" className="min-h-screen flex items-center justify-center px-4 py-20">
         <div className="max-w-5xl mx-auto w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
           
@@ -293,7 +293,7 @@ const Portfolio = () => {
       {/* Contact Section */}
       <section id="contact" className="min-h-screen flex items-center justify-center px-4 py-20">
         <div className="max-w-4xl mx-auto w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Get In Touch
           </h2>
           
