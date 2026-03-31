@@ -78,6 +78,12 @@ const Portfolio = () => {
       description: "A responsive calculator web app built with React, Vite, and Tailwind CSS. Supports basic arithmetic operations with chain calculations.",
       tech: ["React", "Vite", "Tailwind CSS"],
       github: "https://github.com/Rahul1-design/Calculator-App"
+    },
+    {
+      title: "Content Management System",
+      description: "Full-stack Content Management System built with Next.js 14, TypeScript, MongoDB, NextAuth.js, and TipTap editor. Features authentication, rich text editing, image uploads",
+      tech: ["Nextjs", "Tailwind CSS", "TypeScript", "MongoDB", "NextAuth.js","TipTap editor"],
+      gihub: "https://github.com/Rahul1-design/Content-Management-System"
     }
   ];
 
