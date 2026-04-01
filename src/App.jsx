@@ -88,9 +88,30 @@ const Portfolio = () => {
   ];
 
   const skills = {
-    "Frontend": ["HTML/CSS", "JavaScript", "React.js", "Tailwind CSS", "Responsive Design"],
-    "Learning": ["Next.js", "TypeScript (Basic)", "Node.js", "Express.js (Basic)", "MongoDB (Connection and Basic queries)", "PostgreSQL"],
-    "Familiar With": ["Git/GitHub","Prisma", "Redux Toolkit", "NextAuth", "REST APIs"]
+    "Frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+    ],
+
+    "Backend & Database": [
+      "Node.js",
+      "Express.js ",
+      "MongoDB (Connection and Basic Queries)",
+      "PostgreSQL (Familiar with it)",
+    ],
+
+    "Tools & Technologies": [
+      "Git (Basic workflow)",
+      "GitHub",
+      "Redux Toolkit (Basic) ",
+      "NextAuth.js",
+      "TypeScript (Basic)",
+      "REST APIs"
+    ]
   };
 
   const scrollToSection = (sectionId) => {
@@ -280,7 +301,7 @@ const Portfolio = () => {
               <div key={category} className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-purple-500/20">
                 <div className="flex items-center gap-3 mb-6">
                   <Code className="text-purple-400" size={28} />
-                  <h3 className="text-2xl font-bold text-purple-300">{category}</h3>
+                  <h3 className="text-2xl w-full font-bold text-purple-300">{category}</h3>
                 </div>
                 <div className="space-y-3">
                   {items.map((skill, index) => (
