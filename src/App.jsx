@@ -82,7 +82,7 @@ const Portfolio = () => {
     {
       title: "Content Management System",
       description: "Full-stack Content Management System built with Next.js 14, TypeScript, MongoDB, NextAuth.js, and TipTap editor. Features authentication, rich text editing, image uploads",
-      tech: ["Nextjs", "Tailwind CSS", "TypeScript", "MongoDB", "NextAuth.js","TipTap editor"],
+      tech: ["Nextjs", "Tailwind CSS", "TypeScript", "Cloudinary", "MongoDB", "NextAuth.js","TipTap editor"],
       github: "https://github.com/Rahul1-design/Content-Management-System"
     }
   ];
