@@ -1,8 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Instagram, Facebook, Mail, Phone, MapPin, ExternalLink, Menu, X, Code, Sparkles } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Facebook,
+  Mail,
+  Phone,
+  MapPin,
+  ExternalLink,
+  Menu,
+  X,
+  Code,
+  Sparkles,
+} from "lucide-react";
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -10,85 +23,122 @@ const Portfolio = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const projects = [
     {
       title: "Inventory Management System",
-      description: "Learning project built by following a tutorial. Features authentication, dashboard analytics, and product management. Still learning many of the concepts used.",
+      description:
+        "Learning project built by following a tutorial. Features authentication, dashboard analytics, and product management. Still learning many of the concepts used.",
       tech: ["Next.js", "Express.js", "Prisma", "PostgreSQL", "Redux Toolkit"],
-      github: "https://github.com/Rahul1-design/Inventory-tracking-and-reporting-system",
-      featured: true
+      github:
+        "https://github.com/Rahul1-design/Inventory-tracking-and-reporting-system",
+      featured: true,
     },
     {
       title: "Anonymous Messaging App",
-      description: "Full-stack platform enabling users to create accounts and receive anonymous messages. Secure authentication and real-time messaging capabilities.",
+      description:
+        "Full-stack platform enabling users to create accounts and receive anonymous messages. Secure authentication and real-time messaging capabilities.",
       tech: ["Next.js", "TypeScript", "MongoDB", "Mongoose", "NextAuth"],
       github: "https://github.com/Rahul1-design/Anonymous-App",
-      featured: true
+      featured: true,
     },
     {
       title: "ImageKit Video Shop",
-      description: "Modern video content management and sales platform with user authentication, video uploads, and payment processing integration.",
+      description:
+        "Modern video content management and sales platform with user authentication, video uploads, and payment processing integration.",
       tech: ["Next.js", "ImageKit", "Razorpay", "Authentication"],
       github: "https://github.com/Rahul1-design/ImageKit-Video-Shop-",
-      featured: true
+      featured: true,
     },
     {
       title: "SaaS Landing Page",
-      description: "Modern, responsive SaaS landing page built with mobile-first principles. Clean design with smooth animations and optimal user experience.",
+      description:
+        "Modern, responsive SaaS landing page built with mobile-first principles. Clean design with smooth animations and optimal user experience.",
       tech: ["React.js", "Tailwind CSS", "Responsive Design"],
       github: "https://github.com/Rahul1-design/SaaS-App-Landing-Page",
-      featured: true
+      featured: true,
     },
     {
       title: "Weather App",
-      description: "Responsive weather application fetching real-time data from OpenWeatherMap API. Displays temperature, conditions, humidity, and wind speed with elegant UI.",
+      description:
+        "Responsive weather application fetching real-time data from OpenWeatherMap API. Displays temperature, conditions, humidity, and wind speed with elegant UI.",
       tech: ["React", "Vite", "Tailwind CSS", "OpenWeatherMap API"],
-      github: "https://github.com/Rahul1-design/Weather-App"
+      github: "https://github.com/Rahul1-design/Weather-App",
     },
     {
       title: "Todo List Application",
-      description: "Clean todo app with add, edit, delete, and completion features. Implements localStorage for data persistence and task filtering.",
+      description:
+        "Clean todo app with add, edit, delete, and completion features. Implements localStorage for data persistence and task filtering.",
       tech: ["React", "Vite", "Tailwind CSS", "localStorage"],
-      github: "https://github.com/Rahul1-design/Todo-App-LIst"
+      github: "https://github.com/Rahul1-design/Todo-App-LIst",
     },
     {
       title: "Spotify Clone",
-      description: "Web player clone with dynamic song loading, play/pause controls, track navigation, real-time seek bar, and responsive playlist UI.",
+      description:
+        "Web player clone with dynamic song loading, play/pause controls, track navigation, real-time seek bar, and responsive playlist UI.",
       tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Rahul1-design/Spotify-Clone"
+      github: "https://github.com/Rahul1-design/Spotify-Clone",
     },
     {
       title: "Twitter UI Clone",
-      description: "Clean interface clone focusing on design and layout. Practice project for Tailwind utility classes and responsive modern UI styling.",
+      description:
+        "Clean interface clone focusing on design and layout. Practice project for Tailwind utility classes and responsive modern UI styling.",
       tech: ["HTML", "Tailwind CSS"],
-      github: "https://github.com/Rahul1-design/Twitter-Clone-"
+      github: "https://github.com/Rahul1-design/Twitter-Clone-",
     },
     {
       title: "Netflix Clone",
-      description: "A simple Netflix landing page clone built using HTML and CSS. The project focuses on layout, responsive design, and recreating the look of Netflix’s homepage..",
+      description:
+        "A simple Netflix landing page clone built using HTML and CSS. The project focuses on layout, responsive design, and recreating the look of Netflix’s homepage..",
       tech: ["HTML", "CSS"],
-      github: "https://github.com/Rahul1-design/Netflix-Clone"
-    }, 
+      github: "https://github.com/Rahul1-design/Netflix-Clone",
+    },
     {
       title: "Calculator App",
-      description: "A responsive calculator web app built with React, Vite, and Tailwind CSS. Supports basic arithmetic operations with chain calculations.",
+      description:
+        "A responsive calculator web app built with React, Vite, and Tailwind CSS. Supports basic arithmetic operations with chain calculations.",
       tech: ["React", "Vite", "Tailwind CSS"],
-      github: "https://github.com/Rahul1-design/Calculator-App"
+      github: "https://github.com/Rahul1-design/Calculator-App",
     },
     {
       title: "Content Management System",
-      description: "Full-stack Content Management System built with Next.js 14, TypeScript, MongoDB, NextAuth.js, and TipTap editor. Features authentication, rich text editing, image uploads",
-      tech: ["Nextjs", "Tailwind CSS", "TypeScript", "Cloudinary", "MongoDB", "NextAuth.js","TipTap editor"],
-      github: "https://github.com/Rahul1-design/Content-Management-System"
-    }
+      description:
+        "Full-stack Content Management System built with Next.js 14, TypeScript, MongoDB, NextAuth.js, and TipTap editor. Features authentication, rich text editing, image uploads",
+      tech: [
+        "Nextjs",
+        "Tailwind CSS",
+        "TypeScript",
+        "Cloudinary",
+        "MongoDB",
+        "NextAuth.js",
+        "TipTap editor",
+      ],
+      github: "https://github.com/Rahul1-design/Content-Management-System",
+    },
+    {
+      title: "Job Portal App",
+      description:
+        "A full-stack job portal web application built with the MERN stack, where recruiters can post jobs and manage applicants, while students can browse, search, and apply for jobs.",
+      tech: [
+        "React",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Axios",
+        "Shadcn/ui",
+        "Node.js",
+        "Express",
+        "JWT",
+        "Cloudinary",
+      ],
+      github: "https://github.com/Rahul1-design/Job-Portal-App",
+    },
   ];
 
   const skills = {
-    "Frontend": [
+    Frontend: [
       "HTML",
       "CSS",
       "JavaScript",
@@ -101,7 +151,7 @@ const Portfolio = () => {
       "Node.js",
       "Express.js ",
       "MongoDB (Connection and Basic Queries)",
-      "PostgreSQL (Familiar with it)",
+      "PostgreSQL (Just basic)",
     ],
 
     "Tools & Technologies": [
@@ -110,8 +160,8 @@ const Portfolio = () => {
       "Redux Toolkit (Basic) ",
       "NextAuth.js",
       "TypeScript (Basic)",
-      "REST APIs"
-    ]
+      "REST APIs",
+    ],
   };
 
   const scrollToSection = (sectionId) => {
@@ -119,35 +169,42 @@ const Portfolio = () => {
     setIsMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
+      <nav
+        className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-slate-900/95 backdrop-blur-sm shadow-lg" : "bg-transparent"}`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               RS
             </div>
-            
+
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`hover:text-purple-400 transition-colors ${activeSection === item.toLowerCase() ? 'text-purple-400' : ''}`}
-                >
-                  {item}
-                </button>
-              ))}
+              {["Home", "About", "Projects", "Skills", "Contact"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item.toLowerCase())}
+                    className={`hover:text-purple-400 transition-colors ${activeSection === item.toLowerCase() ? "text-purple-400" : ""}`}
+                  >
+                    {item}
+                  </button>
+                ),
+              )}
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -155,30 +212,39 @@ const Portfolio = () => {
           {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden pb-4">
-              {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className="block w-full text-left py-2 hover:text-purple-400 transition-colors"
-                >
-                  {item}
-                </button>
-              ))}
+              {["Home", "About", "Projects", "Skills", "Contact"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item.toLowerCase())}
+                    className="block w-full text-left py-2 hover:text-purple-400 transition-colors"
+                  >
+                    {item}
+                  </button>
+                ),
+              )}
             </div>
           )}
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20">
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center px-4 pt-20"
+      >
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 relative inline-block">
             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-purple-400 shadow-2xl shadow-purple-500/50 mx-auto">
-              <img src="/me.png" alt="Rahul Shrestha" className="w-full  h-full object-cover" />
+              <img
+                src="/me.png"
+                alt="Rahul Shrestha"
+                className="w-full  h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-slate-900"></div>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-linear-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
             Rahul Shrestha
           </h1>
@@ -186,18 +252,21 @@ const Portfolio = () => {
             Aspiring Full-Stack Developer | Learning & Building
           </p>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-            Self-taught developer from Kathmandu, Nepal, learning web development through hands-on projects. Building with React, Next.js, and exploring full-stack technologies while continuously improving my skills.
+            Self-taught developer from Kathmandu, Nepal, learning web
+            development through hands-on projects. Building with React, Next.js,
+            and exploring full-stack technologies while continuously improving
+            my skills.
           </p>
-          
+
           <div className="flex justify-center gap-4 mb-8">
-            <button 
-              onClick={() => scrollToSection('projects')}
+            <button
+              onClick={() => scrollToSection("projects")}
               className="px-8 py-3 bg-linear-to-r from-purple-500 to-pink-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all transform hover:scale-105"
             >
               View My Work
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <button
+              onClick={() => scrollToSection("contact")}
               className="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-400/10 transition-all"
             >
               Get In Touch
@@ -205,16 +274,36 @@ const Portfolio = () => {
           </div>
 
           <div className="flex justify-center gap-6">
-            <a href="https://github.com/Rahul1-design" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+            <a
+              href="https://github.com/Rahul1-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-purple-400 transition-colors"
+            >
               <Github size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/rahul-shrestha-3905a2395" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/rahul-shrestha-3905a2395"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-purple-400 transition-colors"
+            >
               <Linkedin size={28} />
             </a>
-            <a href="https://www.instagram.com/rahulstha21/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+            <a
+              href="https://www.instagram.com/rahulstha21/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-purple-400 transition-colors"
+            >
               <Instagram size={28} />
             </a>
-            <a href="https://www.facebook.com/rahul.shrestha.374251" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+            <a
+              href="https://www.facebook.com/rahul.shrestha.374251"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-purple-400 transition-colors"
+            >
               <Facebook size={28} />
             </a>
           </div>
@@ -222,20 +311,33 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center px-4 py-20">
+      <section
+        id="about"
+        className="min-h-screen flex items-center justify-center px-4 py-20"
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             About Me
           </h2>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-purple-500/20">
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm a beginner developer based in Kapan, Kathmandu, Nepal, learning web development by building projects and following tutorials. I'm passionate about coding and committed to improving my skills every day.
+              I'm a beginner developer based in Kapan, Kathmandu, Nepal,
+              learning web development by building projects and following
+              tutorials. I'm passionate about coding and committed to improving
+              my skills every day.
             </p>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I've worked with technologies like React, Next.js, Node.js, MongoDB, and PostgreSQL by following tutorials and building practice projects. While I'm still learning and often need to revisit concepts, each project helps me understand web development better.
+              I've worked with technologies like React, Next.js, Node.js,
+              MongoDB, and PostgreSQL by following tutorials and building
+              practice projects. While I'm still learning and often need to
+              revisit concepts, each project helps me understand web development
+              better.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm looking for opportunities to gain real-world experience, learn from experienced developers, and grow my skills. I'm honest about what I know and what I'm still learning, and I'm eager to take on challenges that will help me become a better developer.
+              I'm looking for opportunities to gain real-world experience, learn
+              from experienced developers, and grow my skills. I'm honest about
+              what I know and what I'm still learning, and I'm eager to take on
+              challenges that will help me become a better developer.
             </p>
           </div>
         </div>
@@ -247,33 +349,45 @@ const Portfolio = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             My Projects
           </h2>
-          <p className="text-center text-gray-400 mb-12">Projects I've built while learning web development (many from tutorials)</p>
-          
+          <p className="text-center text-gray-400 mb-12">
+            Projects I've built while learning web development (many from
+            tutorials)
+          </p>
+
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div 
+              <div
                 key={index}
-                className={`bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105 ${project.featured ? 'md:col-span-1' : ''}`}
+                className={`bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105 ${project.featured ? "md:col-span-1" : ""}`}
               >
                 {project.featured && (
                   <div className="flex items-center gap-2 text-yellow-400 mb-3">
                     <Sparkles size={20} />
-                    <span className="text-sm font-semibold">Featured Project</span>
+                    <span className="text-sm font-semibold">
+                      Featured Project
+                    </span>
                   </div>
                 )}
                 {project.note && (
-                  <p className="text-sm text-gray-500 italic mb-3">{project.note}</p>
+                  <p className="text-sm text-gray-500 italic mb-3">
+                    {project.note}
+                  </p>
                 )}
-                <h3 className="text-2xl font-bold mb-3 text-purple-300">{project.title}</h3>
+                <h3 className="text-2xl font-bold mb-3 text-purple-300">
+                  {project.title}
+                </h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="px-3 py-1 bg-purple-500/20 rounded-full text-sm text-purple-300">
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-purple-500/20 rounded-full text-sm text-purple-300"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <a 
+                <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -290,18 +404,26 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="min-h-screen flex items-center justify-center px-4 py-20">
+      <section
+        id="skills"
+        className="min-h-screen flex items-center justify-center px-4 py-20"
+      >
         <div className="max-w-5xl mx-auto w-full">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {Object.entries(skills).map(([category, items]) => (
-              <div key={category} className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-purple-500/20">
+              <div
+                key={category}
+                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-purple-500/20"
+              >
                 <div className="flex items-center gap-3 mb-6">
                   <Code className="text-purple-400" size={28} />
-                  <h3 className="text-2xl w-full font-bold text-purple-300">{category}</h3>
+                  <h3 className="text-2xl w-full font-bold text-purple-300">
+                    {category}
+                  </h3>
                 </div>
                 <div className="space-y-3">
                   {items.map((skill, index) => (
@@ -318,34 +440,50 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center justify-center px-4 py-20">
+      <section
+        id="contact"
+        className="min-h-screen flex items-center justify-center px-4 py-20"
+      >
         <div className="max-w-4xl mx-auto w-full">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Get In Touch
           </h2>
-          
+
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-purple-500/20">
             <p className="text-center text-lg text-gray-300 mb-8">
-              I'm actively looking for internship or junior developer opportunities where I can learn and grow. I'm honest about my current skill level and excited to work with experienced developers who can mentor me.
+              I'm actively looking for internship or junior developer
+              opportunities where I can learn and grow. I'm honest about my
+              current skill level and excited to work with experienced
+              developers who can mentor me.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
-              <a href="mailto:rahulshrestha3132@gmail.com" className="flex flex-col items-center gap-3 p-6 bg-purple-500/10 rounded-xl hover:bg-purple-500/20 transition-all">
+              <a
+                href="mailto:rahulshrestha3132@gmail.com"
+                className="flex flex-col items-center gap-3 p-6 bg-purple-500/10 rounded-xl hover:bg-purple-500/20 transition-all"
+              >
                 <Mail className="text-purple-400" size={32} />
                 <span className="text-sm text-gray-400">Email</span>
-                <span className="text-purple-300 text-center break-all">rahulshrestha3132@gmail.com</span>
+                <span className="text-purple-300 text-center break-all">
+                  rahulshrestha3132@gmail.com
+                </span>
               </a>
-              
-              <a href="tel:+9779803799417" className="flex flex-col items-center gap-3 p-6 bg-purple-500/10 rounded-xl hover:bg-purple-500/20 transition-all">
+
+              <a
+                href="tel:+9779803799417"
+                className="flex flex-col items-center gap-3 p-6 bg-purple-500/10 rounded-xl hover:bg-purple-500/20 transition-all"
+              >
                 <Phone className="text-purple-400" size={32} />
                 <span className="text-sm text-gray-400">Phone</span>
                 <span className="text-purple-300">+977 9803799417</span>
               </a>
-              
+
               <div className="flex flex-col items-center gap-3 p-6 bg-purple-500/10 rounded-xl">
                 <MapPin className="text-purple-400" size={32} />
                 <span className="text-sm text-gray-400">Location</span>
-                <span className="text-purple-300 text-center">Kapan, Kathmandu, Nepal</span>
+                <span className="text-purple-300 text-center">
+                  Kapan, Kathmandu, Nepal
+                </span>
               </div>
             </div>
           </div>
@@ -355,15 +493,32 @@ const Portfolio = () => {
       {/* Footer */}
       <footer className="bg-slate-900/80 backdrop-blur-sm py-8 border-t border-purple-500/20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-400">© 2026 Rahul Shrestha. Built with React & Tailwind CSS</p>
+          <p className="text-gray-400">
+            © 2026 Rahul Shrestha. Built with React & Tailwind CSS
+          </p>
           <div className="flex justify-center gap-6 mt-4">
-            <a href="https://github.com/Rahul1-design" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a
+              href="https://github.com/Rahul1-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-purple-400 transition-colors"
+            >
               <Github size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/rahul-shrestha-3905a2395" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/rahul-shrestha-3905a2395"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-purple-400 transition-colors"
+            >
               <Linkedin size={24} />
             </a>
-            <a href="https://www.instagram.com/rahulstha21/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a
+              href="https://www.instagram.com/rahulstha21/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-purple-400 transition-colors"
+            >
               <Instagram size={24} />
             </a>
           </div>
