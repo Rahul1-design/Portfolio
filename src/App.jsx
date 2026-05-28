@@ -29,13 +29,30 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "Job Portal App",
+      description:
+        "A full-stack job portal web application built with the MERN stack, where recruiters can post jobs and manage applicants, while students can browse, search, and apply for jobs.",
+      tech: [
+        "React",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Axios",
+        "Shadcn/ui",
+        "Node.js",
+        "Express",
+        "JWT",
+        "Cloudinary",
+      ],
+      github: "https://github.com/Rahul1-design/Job-Portal-App",
+      featured: true,
+    },
+    {
       title: "Inventory Management System",
       description:
         "Learning project built by following a tutorial. Features authentication, dashboard analytics, and product management. Still learning many of the concepts used.",
       tech: ["Next.js", "Express.js", "Prisma", "PostgreSQL", "Redux Toolkit"],
       github:
         "https://github.com/Rahul1-design/Inventory-tracking-and-reporting-system",
-      featured: true,
     },
     {
       title: "Anonymous Messaging App",
@@ -117,23 +134,6 @@ const Portfolio = () => {
         "TipTap editor",
       ],
       github: "https://github.com/Rahul1-design/Content-Management-System",
-    },
-    {
-      title: "Job Portal App",
-      description:
-        "A full-stack job portal web application built with the MERN stack, where recruiters can post jobs and manage applicants, while students can browse, search, and apply for jobs.",
-      tech: [
-        "React",
-        "Redux Toolkit",
-        "Tailwind CSS",
-        "Axios",
-        "Shadcn/ui",
-        "Node.js",
-        "Express",
-        "JWT",
-        "Cloudinary",
-      ],
-      github: "https://github.com/Rahul1-design/Job-Portal-App",
     },
   ];
 
